@@ -1,0 +1,13 @@
+load Pong.asm,
+output-file Pong.out,
+//compare-to Pong.cmp,
+output-list 
+RAM[16300]%D1.6.1 RAM[16900]%D1.6.1 RAM[17200]%D1.6.1 RAM[17700]%D1.6.1 RAM[18100]%D1.6.1 RAM[18670]%D1.6.1 RAM[19000]%D1.6.1 RAM[20200]%D1.6.1 RAM[21000]%D1.6.1 RAM[22190]%D1.6.1 RAM[22500]%D1.6.1 RAM[22700]%D1.6.1 RAM[23000]%D1.6.1 RAM[23400]%D1.6.1 RAM[23910]%D1.6.1 RAM[24111]%D1.6.1 RAM[24500]%D1.6.1;
+
+set RAM[24576] 132,
+
+repeat 20000000 {
+  ticktock;
+}
+
+output;

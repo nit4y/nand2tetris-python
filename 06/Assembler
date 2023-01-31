@@ -1,0 +1,24 @@
+#!/bin/sh
+# This file only works on Unix-like operating systems, so it won't work on Windows.
+
+## Why do we need this file?
+# The purpose of this file is to run your project.
+# We want our users to have a simple API to run the project. 
+# So, we need a "wrapper" that will hide all  details to do so,
+# enabling users to simply type 'Assembler <path>' in order to use it.
+
+## What are '#!/bin/sh' and '$*'?
+# '$*' is a variable that holds all the arguments this file has received. So, if you
+# run "Assembler trout mask replica", $* will hold "trout mask replica".
+
+## What should I change in this file to make it work with my project?
+# IMPORTANT: This file assumes that the main is contained in "Main.py".
+#            If your main is contained elsewhere, you will need to change this.
+
+python3 Main.py $*
+
+# This file is part of nand2tetris, as taught in The Hebrew University, and 
+# was written by Aviv Yaish. It is an extension to the specifications given
+# in https://www.nand2tetris.org (Shimon Schocken and Noam Nisan, 2017),
+# as allowed by the Creative Common Attribution-NonCommercial-ShareAlike 3.0
+# Unported License: https://creativecommons.org/licenses/by-nc-sa/3.0/

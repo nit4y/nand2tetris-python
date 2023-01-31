@@ -1,0 +1,22 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/08/FunctionCalls/IntermidiateFunction/IntermidiateFunction.vm
+
+// Performs a simple calculation and returns the result.
+
+call Sys.init 0
+label END_LOOP
+goto END_LOOP
+
+function Sys.init 0
+push constant 5
+call IntermidiateFunction.testcallee 0
+add
+return
+
+
+
+function IntermidiateFunction.testcallee 0
+push constant 6
+return

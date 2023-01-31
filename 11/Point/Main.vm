@@ -1,0 +1,10 @@
+function Main.main 0
+push constant 2
+push constant 3
+call Point.new 2
+pop local 0
+push local 0
+call p1.getx 1
+pop local 1
+push constant 0
+return

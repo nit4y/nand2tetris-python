@@ -1,0 +1,30 @@
+function Main.main 2
+push constant 5
+call Array.new 1
+pop local 0
+push constant 3
+call Array.new 1
+pop local 1
+push local 1
+push constant 0
+add
+push constant 21
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+
+push local 0
+push constant 2
+add
+push local 1
+push constant 0
+add
+pop pointer 1
+push that 0
+pop temp 0
+pop pointer 1
+push temp 0
+pop that 0
+push constant 0
+return

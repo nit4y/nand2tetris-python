@@ -1,0 +1,5 @@
+push constant 2
+push constant 0
+push constant 32767
+sub
+lt					   //false

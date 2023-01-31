@@ -1,0 +1,16 @@
+class Point {
+    field int x, y;
+    static int pointCount;
+
+    constructor Point new(int ax, int ay) {
+        let x = ax;
+        let y = ay;
+        let pointCount =  pointCount + 1;
+        return this;
+    }
+
+    method int getx() {
+        let ret = x;
+        return ret;
+    }
+}

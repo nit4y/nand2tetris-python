@@ -1,0 +1,20 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/11/Average/Main.jack
+
+// (Same as projects/09/Average/Main.jack)
+
+// Inputs some numbers and computes their average
+class Main {
+   function void main() {
+     var Array a, b;
+
+     let a = Array.new(5); // constructs the array
+     let b = Array.new(3); // constructs the array
+     let b[0] = 21;
+     let a[2] = b[0];
+
+     return;
+   }
+}
