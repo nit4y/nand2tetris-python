@@ -452,7 +452,7 @@ class CompilationEngine:
         self.tokenizer.advance()
 
         ret_type = "void"
-        if self.tokenizer.symbol() != ";" and self.tokenizer.token_type() != consts.SYMBOL:
+        if self.tokenizer.symbol() != ";":
             ret_type = self.compile_expression()
 
         self.compile_symbol()
